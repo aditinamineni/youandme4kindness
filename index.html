@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You & Me 4 Kindness - Empowering Every Star</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <span>You & Me 4 Kindness</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="scrunchies.html" class="nav-link">Scrunchies</a></li>
+                <li><a href="dance.html" class="nav-link">Dance</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
+                <li><a href="#" class="nav-link shop-link" onclick="openCart(event)">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cartCount" class="cart-count">0</span>
+                </a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-headline">Empowering Every Star Through Creativity, Culture, and Community</h1>
+            <p class="hero-subheadline">Through handmade scrunchies, inclusive dance programs, and accessible resources, we help individuals with special needs discover confidence, joy, self-expression, and belonging.</p>
+            <p class="hero-text">You & Me 4 Kindness was founded on a simple belief: everyone deserves opportunities to shine. By combining cultural heritage, artistic expression, and community support, we create meaningful experiences that empower individuals of all abilities.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('impact-section').scrollIntoView({behavior: 'smooth'})">Explore Our Mission</button>
+                <button class="btn btn-secondary" onclick="location.href='get-involved.html'">Get Involved</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: THREE WAYS WE CREATE IMPACT -->
+    <section id="impact-section" class="three-ways">
+        <div class="container">
+            <h2 class="section-title">Three Ways We Make a Difference</h2>
+            <p class="section-subtitle">Every initiative works together to support individuals with special needs while building a more inclusive community.</p>
+            
+            <div class="impact-cards-grid">
+                <!-- Card 1: Handmade Scrunchies -->
+                <div class="impact-card">
+                    <div class="impact-card-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Handmade Scrunchies</h3>
+                    <p>Every scrunchie is carefully handmade using vibrant fabrics sourced from India. Each purchase helps fund inclusive programs while celebrating culture, creativity, and kindness.</p>
+                    <a href="scrunchies.html" class="card-link">Shop Scrunchies →</a>
+                </div>
+
+                <!-- Card 2: Inclusive Dance -->
+                <div class="impact-card">
+                    <div class="impact-card-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Inclusive Dance</h3>
+                    <p>Our dance initiatives encourage confidence, movement, creativity, and self-expression while creating opportunities for participants to build friendships and develop new skills.</p>
+                    <a href="dance.html" class="card-link">Learn About Dance →</a>
+                </div>
+
+                <!-- Card 3: Resources & Support -->
+                <div class="impact-card">
+                    <div class="impact-card-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Resources & Support</h3>
+                    <p>We provide accessible resources, information, and community connections to help individuals with special needs and their families navigate opportunities for growth and success.</p>
+                    <a href="resources.html" class="card-link">Explore Resources →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: IMPACT STATISTICS -->
+    <section class="impact-stats">
+        <div class="container">
+            <h2 class="section-title">Our Impact</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <p class="stat-label">% Net Profits Donated</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <p class="stat-label">Scrunchies Handmade</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="250">0</div>
+                    <p class="stat-label">Participants Supported</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="15">0</div>
+                    <p class="stat-label">Community Programs</p>
+                </div>
+            </div>
+
+            <p class="stats-description">Every purchase, class, and community initiative contributes to creating opportunities where individuals with special needs can learn, grow, perform, and thrive.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: FEATURED STORY -->
+    <section class="featured-story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image">
+                    <div class="story-placeholder">
+                        <i class="fas fa-images"></i>
+                        <p>Participants on Stage</p>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <h2>Why We Do What We Do</h2>
+                    <p>Many individuals with disabilities face barriers to extracurricular opportunities that foster confidence, friendships, and personal growth.</p>
+                    <p>Through inclusive programs, creative expression, and community support, we strive to ensure every individual has a chance to discover their talents and celebrate their achievements.</p>
+                    
+                    <blockquote class="story-quote">
+                        <p>"Everyone deserves a chance to shine."</p>
+                    </blockquote>
+
+                    <a href="impact.html" class="btn btn-primary">Read Our Full Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: GET INVOLVED -->
+    <section class="get-involved-preview">
+        <div class="container">
+            <h2 class="section-title">Join The Movement</h2>
+            
+            <div class="involvement-cards">
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Volunteer</h3>
+                    <p>Help support events, programs, and outreach efforts.</p>
+                    <a href="get-involved.html" class="btn btn-secondary">Volunteer</a>
+                </div>
+
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Donate</h3>
+                    <p>Support opportunities directly through financial contributions.</p>
+                    <a href="get-involved.html" class="btn btn-secondary">Donate</a>
+                </div>
+
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partner With Us</h3>
+                    <p>Collaborate with schools, businesses, and organizations.</p>
+                    <a href="get-involved.html" class="btn btn-secondary">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Connected</h2>
+            <p>Receive updates on new scrunchie collections, upcoming classes, impact stories, and community initiatives.</p>
+            
+            <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SHOPPING CART MODAL -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <button class="close-btn" onclick="closeCart()">&times;</button>
+            </div>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="btn btn-primary" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>You & Me 4 Kindness</h4>
+                <p>Empowering individuals with special needs through creativity, culture, and community.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="scrunchies.html">Scrunchies</a></li>
+                    <li><a href="dance.html">Dance</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:aditinamineni6@gmail.com">aditinamineni6@gmail.com</a></p>
+                <p>Partnering with: North Texas Performing Arts (NTPA)</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Handcrafted with kindness. Supporting every star's moment in the spotlight.</p>
+            <p>&copy; 2024 You & Me 4 Kindness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
